@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/white.min.css" id="theme">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/monokai.min.css">
+    <link rel="stylesheet" href="style.css">
+    
 
     <title>Presentation</title>
 </head>
@@ -19,12 +21,11 @@
                 <h3>Web apps deployment</h3>
             </section>
 
-            <!-- Example of nested vertical slides -->
 				<section>
-						<p style = "font-size: 1.5rem;">Local Development Environment</p>
-                       <img class="" height="238" data-src="./pics/localhost.png" alt="">
-                       <p style = "font-size: 1.5rem;">Remote public host</p>
-                       <img class="" height="238" data-src="./pics/remotehost.png" alt="">
+					<p style = "font-size: 1.5rem;">Local Development Environment (LDE) </p>
+                    <img class="" height="238" data-src="./pics/localhost.png" alt="">
+                    <p style = "font-size: 1.5rem;">Remote public host</p>
+                    <img class="" height="238" data-src="./pics/remotehost.png" alt="">
 				</section>
 
                 <section>
@@ -47,14 +48,8 @@
 
                 <section>
                     <h4>Cloud pyramyd</h4>
-                   
-                    <img  height="250" data-src="./pics/pyramid.jpg" alt="">
+                    <!-- <img  height="250" data-src="./pics/pyramid.jpg" alt=""> -->
                     <img  height="300" data-src="./pics/SAAS.png" alt="">
-                </section>
-
-                <section>
-                    <h4>IaaS / PaaS</h4>
-                    
                     <img  height="300" data-src="./pics/iaas_saas_ru.png" alt="">
                 </section>
 
@@ -77,8 +72,8 @@
                             <li>Multiple languages support</li>
                             <img  height="125" data-src="./pics/languages.png" alt="">
                             <li>Platform as a Service</li>
-                            <li>Free plan</li>
                             <li>Scalable with dynos</li>
+                            <li>Free plan</li>
                         </ul>
                         
                     </section>
@@ -122,10 +117,10 @@
                             <li>7. Set port with process environment vars</li>
                             <li>8. Manage project dependencies</li>
                         </ul>
-                        <p>
+                        <div class = "image-line">
                             <img data-src="./pics/race/06.png" alt=""> 
                             <img data-src="./pics/race/07.png" alt="">   
-                        </p>
+                        </div>
               
                     </section>
 
@@ -167,7 +162,7 @@
                     <section>
                         <p style = "font-size: 1.5rem;">2. Add server.js file</p>
                         <img data-src="./pics/store/01.png" alt=""> 
-                        <p style = "font-size: 1.5rem;">3. Set start script</p>
+                        <p style = "font-size: 1.5rem;">3. Set up start script</p>
                         <img data-src="./pics/store/02.png" alt=""> 
                     </section>
                     <section>
@@ -191,11 +186,12 @@
                     </section>
                 </section>
 
-
+                
                 <section>
                     <h3>Free plan cons</h3>
                     <p style = "font-size: 1.5rem;">The free dyno will sleep if there is no web traffic for 30 minutes.</p>
                     <img data-src="./pics/sleep.png" alt=""> 
+                    <p style = "font-size: 1.5rem;">Choose a suitable plan for serious projects.</p>
                     <img data-src="./pics/costs.png" alt=""> 
 
 				</section>

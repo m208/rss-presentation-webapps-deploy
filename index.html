@@ -6,18 +6,203 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/blood.min.css" id="theme">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/white.min.css" id="theme">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/monokai.min.css">
 
     <title>Presentation</title>
 </head>
 <body>
-
     <div class="reveal">
 		<div class="slides">
 
-            
-          
+            <section >
+                <h3>Web apps deployment</h3>
+            </section>
+
+            <!-- Example of nested vertical slides -->
+				<section>
+						<p style = "font-size: 1.5rem;">Local Development Environment</p>
+                       <img class="" height="238" data-src="./pics/localhost.png" alt="">
+                       <p style = "font-size: 1.5rem;">Remote public host</p>
+                       <img class="" height="238" data-src="./pics/remotehost.png" alt="">
+				</section>
+
+                <section>
+					<section>
+                        <h3>Where to host?</h3>
+						<p>1) Host it by self</p>
+                       <img class=""  height="400" data-src="./pics/server-complexity.jpg" alt="">
+					</section>
+					<section>
+                        <h3>Where to host?</h3>
+						<p>2) Rent a VPS/VDS</p>
+                       <img class=""  height="400" data-src="./pics/room.jpg" alt="">
+					</section>
+                    <section>
+                        <h3>Where to host?</h3>
+						<p>3) Cloud Server Hosting</p>
+                       <img class=""  height="400" data-src="./pics/Cloud-computing-1649753093.png" alt="">
+					</section>
+				</section>
+
+                <section>
+                    <h4>Cloud pyramyd</h4>
+                   
+                    <img  height="250" data-src="./pics/pyramid.jpg" alt="">
+                    <img  height="300" data-src="./pics/SAAS.png" alt="">
+                </section>
+
+                <section>
+                    <h4>IaaS / PaaS</h4>
+                    
+                    <img  height="300" data-src="./pics/iaas_saas_ru.png" alt="">
+                </section>
+
+                <section>
+                    <h4>DevOps Engineer </h4>
+                    <p style = "font-size: 1.5rem;">A DevOps engineer is an IT professional who works with developers, system operators and other IT staff to oversee code releases and deployments.</p>
+                    <img  height="450" data-src="./pics/devops.png" alt="">
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Deploying NodeJS app to Heroku</h3>
+                        <img  height="300" data-src="./pics/heroku_node.png" alt=""> 
+                    </section>
+                    <section>
+
+                        <h4>About Heroku</h4>
+                        <img  height="150" data-src="./pics/info.png" alt="">
+                        <ul>
+                            <li>Multiple languages support</li>
+                            <img  height="125" data-src="./pics/languages.png" alt="">
+                            <li>Platform as a Service</li>
+                            <li>Free plan</li>
+                            <li>Scalable with dynos</li>
+                        </ul>
+                        
+                    </section>
+                    <section>
+                        <h4>Dynos containers</h4>
+                        <p style = "font-size: 1.5rem;">All Heroku applications run in a collection of lightweight Linux containers called dynos. </p>
+                        <p style = "font-size: 1.5rem;">Heroku provides easy-to-use tools that enable developers to instantly scale dynos to meet demand. </p>
+                        <img  height="300" data-src="./pics/virt.jpg" alt="">
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Deploying API server</h3>
+                        <p style = "font-size: 1.5rem;">1. Register account</p>
+                        <img  height="600" data-src="./pics/Register.png" alt=""> 
+                    </section>
+                    <section>
+                        <p style = "font-size: 1.5rem;">2. Install Heroku Command Line Interface (CLI)</p>
+                        <img  height="300" data-src="./pics/CLI.png" alt=""> 
+                    </section>
+                    <section>
+                        <p style = "font-size: 1.5rem;">3. Click on button "Create new app"</p>
+                        <img  height="400" data-src="./pics/race/01.png" alt=""> 
+                    </section>
+                    <section>
+                        <p style = "font-size: 1.5rem;">4. Connect GitHub repository</p>
+                        <img data-src="./pics/race/02.png" alt=""> 
+                    </section>
+                    <section>
+                        <ul style = "font-size: 1.5rem;">
+                            <li>5. Enable auto deploys</li>
+                            <li>6. Select branch and press Deploy</li>
+                        </ul>
+
+                        <img data-src="./pics/race/04.png" alt=""> 
+                    </section>
+
+                    <section>
+                        <ul style = "font-size: 1.5rem;">
+                            <li>7. Set port with process environment vars</li>
+                            <li>8. Manage project dependencies</li>
+                        </ul>
+                        <p>
+                            <img data-src="./pics/race/06.png" alt=""> 
+                            <img data-src="./pics/race/07.png" alt="">   
+                        </p>
+              
+                    </section>
+
+                    <section>
+                        <ul style = "font-size: 1.5rem;">
+                            <li>9. Or set NPM_CONFIG_PRODUCTION to false</li>
+                        </ul>
+
+                        <img data-src="./pics/race/08.png" alt=""> 
+                    </section>
+
+                    <section>
+                        <ul style = "font-size: 1.5rem;">
+                            <li>10. Auto-deploy starts after commit is pushed</li>
+                        </ul>
+
+                        <img height="300" data-src="./pics/race/09.png" alt=""> 
+                        <img height="300" data-src="./pics/race/10.png" alt=""> 
+                    </section>
+
+                    <section>
+                        <ul style = "font-size: 1.5rem;">
+                            <li>11. Done</li>
+                        </ul>
+                        <p>
+                           <img height="700" data-src="./pics/race/11.png" alt="">  
+                        </p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Deploying frontend app</h3>
+
+                        <p style = "font-size: 1.5rem;">1. Add Express.js to project</p>
+                        <img  height="300" data-src="./pics/exprss.jpg" alt=""> 
+                        <p><img data-src="./pics/store/00.png" alt=""> </p>
+                    </section>
+                    <section>
+                        <p style = "font-size: 1.5rem;">2. Add server.js file</p>
+                        <img data-src="./pics/store/01.png" alt=""> 
+                        <p style = "font-size: 1.5rem;">3. Set start script</p>
+                        <img data-src="./pics/store/02.png" alt=""> 
+                    </section>
+                    <section>
+                        <p style = "font-size: 1.5rem;">4. Check devDependencies</p>
+                        <img data-src="./pics/store/03.png" alt=""> 
+                    </section>
+                    <section>
+                        <p style = "font-size: 1.5rem;">5. Create new app</p>
+                        <img data-src="./pics/store/04.png" alt=""> 
+                    </section>
+                    <section>
+                        <ul style = "font-size: 1.5rem;">
+                            <li>6. Connect GitHub repository and click Deploy</li>
+                        </ul>
+
+                        <img data-src="./pics/store/05.png" alt=""> 
+                        <ul style = "font-size: 1.5rem;">
+                            <li>7. Done</li>
+                        </ul>
+                        <img data-src="./pics/store/07.png" alt=""> 
+                    </section>
+                </section>
+
+
+                <section>
+                    <h3>Free plan cons</h3>
+                    <p style = "font-size: 1.5rem;">The free dyno will sleep if there is no web traffic for 30 minutes.</p>
+                    <img data-src="./pics/sleep.png" alt=""> 
+                    <img data-src="./pics/costs.png" alt=""> 
+
+				</section>
+
+                <section>
+                    <p>Questions?</p>
+				</section>
 
 		</div>
 	</div>
